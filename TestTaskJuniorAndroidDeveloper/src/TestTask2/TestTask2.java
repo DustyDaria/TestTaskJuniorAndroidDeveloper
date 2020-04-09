@@ -122,7 +122,7 @@ public class TestTask2 {
 
         List<Integer> priceDis = price.subList(setOffset, realEndPositon);
         System.out.print("Ценики со скидками: ");
-        for (int i = 0; i < priceDis.size(); i++){
+        for (Integer priceDi : priceDis) {
             double priceDiscount = priceDis.get(i) - ((priceDis.get(i) / 100.d) * setDiscount);
             System.out.print(priceDiscount + ", ");
         }
